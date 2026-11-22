@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Named Locally | Is your med spa one of the places AI recommends?</title>
+<meta name="description" content="When people ask ChatGPT, Gemini or Perplexity where to go, they get three or four names. We show you whether yours is one of them, and fix it if it isn't.">
+<style>
+  :root {
+    --ink: #17201c;
+    --muted: #5d6b64;
+    --paper: #f6f3ec;
+    --card: #fffdf8;
+    --line: #ddd6c6;
+    --accent: #1f6f54;
+    --accent-ink: #ffffff;
+    --miss: #b4532a;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 28px 0 0; }
+  .mark {
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-weight: 700; letter-spacing: 0.02em; font-size: 15px;
+  }
+  .mark span { color: var(--accent); }
+  h1 {
+    font-size: clamp(34px, 6.2vw, 54px);
+    line-height: 1.08; letter-spacing: -0.015em;
+    margin: 64px 0 20px; font-weight: 600;
+  }
+  .lede { font-size: 20px; color: var(--muted); max-width: 620px; margin: 0 0 32px; }
+  .btn {
+    display: inline-block; background: var(--accent); color: var(--accent-ink);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-weight: 600; font-size: 16px; text-decoration: none;
+    padding: 14px 22px; border-radius: 8px;
+  }
+  .btn:hover, .btn:focus-visible { background: #17553f; }
+  .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .fine { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14px; color: var(--muted); margin-top: 12px; }
+  section { margin: 72px 0; }
+  h2 { font-size: 26px; margin: 0 0 14px; font-weight: 600; }
+  p { margin: 0 0 14px; }
+  .report {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 22px; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .report .tag {
+    display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--miss); border: 1px solid var(--miss);
+    border-radius: 999px; padding: 3px 10px; margin-bottom: 14px;
+  }
+  .report .q { font-size: 15px; color: var(--muted); margin-bottom: 14px; }
+  .report .q b { color: var(--ink); font-weight: 600; }
+  .scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  @media (max-width: 520px) { table { font-size: 14px; } th, td { padding: 10px 5px; } .bar { max-width: 34px; } }
+  th, td { text-align: left; padding: 10px 8px; border-top: 1px solid var(--line); }
+  th { font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); border-top: 0; }
+  td.n { font-variant-numeric: tabular-nums; }
+  tr.you td { color: var(--miss); font-weight: 600; }
+  .bar { display: inline-block; height: 8px; border-radius: 4px; background: var(--accent); vertical-align: middle; margin-right: 8px; }
+  tr.you .bar { background: var(--miss); }
+  ol.steps { padding-left: 22px; margin: 0; }
+  ol.steps li { margin-bottom: 12px; padding-left: 4px; }
+  footer {
+    border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted);
+    font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14px;
+  }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><div class="mark">named<span>locally</span></div></header>
+
+  <main>
+    <h1>When someone asks AI where to get Botox near you, does it say your name?</h1>
+    <p class="lede">ChatGPT, Gemini and Perplexity answer that question with three or four places. We show you whether your med spa is one of them, and fix it if it isn't.</p>
+    <a class="btn" href="mailto:hello@namedlocally.com?subject=Send%20me%20my%20report">Get your free report</a>
+    <div class="fine">One page, made by hand for your spa. No call required.</div>
+
+    <section aria-labelledby="sample">
+      <h2 id="sample">What the report looks like</h2>
+      <p>We ask the main AI assistants the questions your patients ask, across your treatments and your area, and count who gets named.</p>
+      <div class="report">
+        <div class="tag">Sample with made-up data</div>
+        <div class="q">Asked 40 times across 4 assistants: <b>"best place for lip filler in Fort Lauderdale"</b></div>
+        <div class="scroll">
+          <table>
+            <thead><tr><th>Med spa</th><th>Times named</th><th>Where the AI found them</th></tr></thead>
+            <tbody>
+              <tr><td>Competitor A</td><td class="n"><span class="bar" style="width:70px"></span>28</td><td>Own site, Yelp, local magazine</td></tr>
+              <tr><td>Competitor B</td><td class="n"><span class="bar" style="width:48px"></span>19</td><td>Own site, RealSelf</td></tr>
+              <tr><td>Competitor C</td><td class="n"><span class="bar" style="width:28px"></span>11</td><td>"Best of" list</td></tr>
+              <tr class="you"><td>Your spa</td><td class="n"><span class="bar" style="width:3px"></span>0</td><td>Not found</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="how">
+      <h2 id="how">How it works</h2>
+      <ol class="steps">
+        <li><b>The report.</b> Free. You see exactly what AI says today when people ask about your treatments in your area.</li>
+        <li><b>The audit.</b> We trace why the named spas get named: what's on their site, their listings and their reviews that yours is missing.</li>
+        <li><b>The fix.</b> We make the changes that get you named, then re-run the same questions every week so you see the count climb.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="who">
+      <h2 id="who">Engineering, not guesswork</h2>
+      <p>Named Locally is run by an AI engineer with a master's in machine learning. We know how these models decide which businesses to name, and we use that to get yours named.</p>
+      <p>The outcome is simple: a patient near you asks AI where to go, and your spa is in the answer.</p>
+      <a class="btn" href="mailto:hello@namedlocally.com?subject=Send%20me%20my%20report">Get your free report</a>
+    </section>
+  </main>
+
+  <footer>
+    Named Locally · Fort Lauderdale, FL · <a href="mailto:hello@namedlocally.com">hello@namedlocally.com</a>
+  </footer>
+</div>
+</body>
+</html>
